@@ -1,38 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+body{
+  background-color: #A267AC;
+  cursor:default;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 3rem;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2rem;
+}
+h1,h3{
   color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
+h3{
+  font-weight: 400;
+  display: inline;
+}
+h4{
+  color: #B33030;
+}
+form{
+  margin: 1rem 27rem 3rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* background-color: #A267AC; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+form div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem;
+}
+button{
+  color: #A267AC;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #EDF993;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem ;
+  font-size: 1.1rem;
+}
+form button:hover{
+  
+  background-color: #BCE989;
+}
+.mbutton{
+  color: white;
+  background-color: #A267AC;
+  font-size: 700;
+  text-decoration: underline;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+input{
+  outline: none;
+  border: none;
+  /* background-color: #FFBCD1; */
+  font-family: 'Roboto Mono', monospace;
+  border-bottom: #FFBCD1 2px solid;
+  font-size: 1.2rem;
+  width: 65%;
+}
+input::placeholder {
+  /* color: #FFBCD1; */
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+}
+.error{
+  /* background-color:#FF6464; */
+  border: #B33030 1px solid;
+}
+p{
+  color: #B33030;
+}
+.welcome{
+  /* align-self: center; */
+  justify-self: center;
+  background-image: radial-gradient(#EDF993 20%, transparent 20%),
+      radial-gradient(#BCE989 20%, transparent 20%);
+  background-color: #A267AC;
+  background-position: 0 0, 50px 50px;
+  background-size: 100px 100px;
+}
+.welcome h1{
+ color: black;
 }
