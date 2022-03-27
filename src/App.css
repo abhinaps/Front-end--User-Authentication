@@ -23,9 +23,7 @@ h4{
   color: #B33030;
 }
 form{
-  margin: 1rem 27rem 3rem;
-
-  /* background-color: #A267AC; */
+  margin: 2% 30% 3rem;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -90,4 +88,42 @@ p{
 }
 .welcome h1{
  color: black;
+}
+@media screen and (max-width: 950px) {
+  form{
+    margin: 2rem 25% 3rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  form{
+    margin: 2rem 15% 3rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .App{
+    padding-top: 0;
+  }
+  form{
+    margin: 2rem 10% 3rem;
+  }
+  form div{
+    text-align: left;
+    flex-direction: column;
+    gap: 2px;
+  }
+  input{
+    width: 100%;
+  }
+  .footer{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer h3{
+    margin: 3px;
+  }
+  .mbutton{
+    display: block;
+  }
 }
